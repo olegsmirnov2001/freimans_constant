@@ -1,0 +1,36 @@
+\subsection{Resection}
+
+\begin{definition}
+	Call \textbf{resection} of a segment $A = [a; b]$
+	a process of removing subsegment $A_{12} = [a_1; b_1]$,
+	leaving two segments $A_1 \sqcup A_2 = [a; a_1] \sqcup [b_1; b]$.
+\end{definition}
+
+%We will introduce an infinite sequence of resections
+%(at first segment $A$ is resected, then resections are performed at $A_1$ and $A_2$, and so on)
+%which will produce Cantor set $\mathcal{L}(A)$.
+
+\begin{definition}
+	Call subsegment $A_{12} \subset A$ \textbf{normal}, if it is thicker than the two remaining subsegments:
+	\begin{equation}
+		\label{normal_resection}
+		|A_{12}| \leqslant min\;\{|A_1|,\; |A_2|\}
+	\end{equation}
+\end{definition}
+
+We call a resection \textbf{normal} if the resected subsegment is normal.
+
+\begin{proposition}
+	For any normal resection, having
+	\begin{equation}
+		\label{sum_is_present}
+		A + A = (A_1 \sqcup A_2) + (A_1 \sqcup A_2).
+	\end{equation}
+\end{proposition}
+
+%Clearly, if segment $A$ is transformed into Cantor set $\mathcal{L}(A)$ with only normal resections, then
+%\begin{equation*}
+%	A + A = \mathcal{L}(A) + \mathcal{L}(A).
+%\end{equation*}
+
+%\textit{We will \textbf{only} perform normal resections during the proof.}

@@ -1,0 +1,36 @@
+\subsection{Rectangle aspect ratio}
+
+Consider some fixed center of rectangle $\{a_{i_1} ... a_{i_2}\}$.
+
+We will often extend it from the left (right) using some continuations
+$\T_{\g_1}, \T_{\g_2}\; (\T_{\d_1}, \T_{\d_2})$.
+
+These values produce $\g_1$, $\g_2$ ($\d_1$, $\d_2$)
+using \ref{epsilon_rule}.
+
+In other words, finite continued fractions
+$[0; a_{-1}, a_{-2}, ..., a_{i_1}] = \dfrac{P_{i_1}}{Q_{i_1}}$
+$\left([0; a_{1}, a_{2}, ..., a_{i_2}] = \dfrac{P_{i_2}}{Q_{i_2}}\right)$
+are convergents for $\g_1$, $\g_2$ ($\d_1$, $\d_2$).
+
+Then
+
+\begin{equation}%\tag{5.6}\label{one_more_equation}
+	\left| \dfrac{\g_1 - \g_2}{\d_1 - \d_2} \right|
+	=
+	\dfrac{1}{q}
+	\left| \dfrac{\T_{\g_1} - \T_{\g_2}}
+	{\T_{\d_1} - \T_{\d_2}} \right|
+	\dfrac{1 + p' \T_{\d_1}}{1 + p \T_{\g_1}}\,
+	\dfrac{1 + p' \T_{\d_2}}{1 + p \T_{\g_2}}
+	\approx
+	\dfrac{1}{q}
+	\left| \dfrac{\T_{\g_1} - \T_{\g_2}}
+	{\T_{\d_1} - \T_{\d_2}} \right|,
+\end{equation}
+where
+\begin{equation*}
+	p = \dfrac{Q_{i_1 + 1}}{Q_{i_1}},\;\;
+	p' = \dfrac{Q_{i_2 - 1}}{Q_{i_2}},\;\;
+	q = \dfrac{Q_{i_1}^2}{Q_{i_2}^2}.
+\end{equation*}

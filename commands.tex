@@ -1,0 +1,69 @@
+\newcommand{\bigs}{\vspace*{\bigskipamount}}
+
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+
+\theoremstyle{definition}
+\newtheorem*{designation}{Designation}
+
+\theoremstyle{proposition}
+\newtheorem*{proposition}{Proposition}
+
+\theoremstyle{lemma}
+\newtheorem*{lemma}{Lemma}
+
+
+\newcommand{\M}{\mathcal{M}}
+\renewcommand{\l}{\lambda}
+\newcommand{\m}{\mu}
+\newcommand{\g}{\upgamma}
+\renewcommand{\d}{\delta}
+\newcommand{\D}{\Delta}
+\newcommand{\T}{\Theta}
+
+
+\newcommand{\Ts}[5][,]{%
+	\begin{equation*}
+		\T_{\g'} = \T_{#2},\;
+		\T_{\g''} = \T_{#3},\;
+		\T_{\d'} = \T_{#4},\;
+		\T_{\d''} = \T_{#5}{#1}
+	\end{equation*}%
+}
+
+\newcommand{\Tspairs}[3][,]{
+	\begin{equation*}
+		\T_{\g'} = \T_{\d'} = \T_{#2},\;
+		\T_{\g''} = \T_{\d''} = \T_{#3}{#1}
+	\end{equation*}
+}
+
+\newcommand{\uu}[2]{
+	\dfrac{1 + p \T_{#1}}{1 + p \T_{#2}}\,
+}
+
+\newcommand{\up}[2]{
+	\dfrac{1 + p \T_{#1}}{1 + p' \T_{#2}}\,
+}
+
+\newcommand{\pu}[2]{
+	\dfrac{1 + p' \T_{#1}}{1 + p \T_{#2}}\,
+}
+
+\newcommand{\pp}[2]{
+	\dfrac{1 + p' \T_{#1}}{1 + p' \T_{#2}}\,
+}
+
+\newcommand{\nn}[2]{
+	\dfrac{1 + {#1}}{1 + {#2}}\,
+}
+
+\newcommand{\pic}[2][1]{%
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=#1\textwidth]{#2}
+	\end{figure}
+}
