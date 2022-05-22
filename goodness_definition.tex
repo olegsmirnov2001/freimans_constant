@@ -1,18 +1,22 @@
 \subsection{Definition}
 
+Consider a horizontal rectangle $\D = \left\{ a_{i_1} ... a_{i_2} \right\}$.
+
 \begin{definition}
-	Rectangle $\left\{ a_{i_1} ... a_{i_2} \right\}$ is \textbf{good},
+	Rectangle $\D$ is called \textbf{good},
 	if subrectangles
 	$\{2, 0\}$ and $\{1, 0\}$ intersect.
 \end{definition}
 
-For example, in case $i_1$ is even, that means
+\pic[0.5]{goodness}
 
-\begin{equation}\tag{6.3}\label{goodness}
+For example, in case $i_1$ is even, this means that
+
+\begin{equation}\label{goodness}
 	\{2, 0\}'' \geqslant \{1, 0\}'.
 \end{equation}
 
-Bounds of rectangles are determined by rules from section \ref{section_boundaries}.
+Bounds of rectangles are determined by the rules from section \oldref{section_boundaries}.
 
 If rectangle is not good (for example, \ref{goodness} doesn't take place), then
 $$ ( \{2, 0\}'' ; \{1, 0\}' ) \not\subset
