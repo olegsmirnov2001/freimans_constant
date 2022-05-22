@@ -64,9 +64,12 @@
 	\dfrac{1 + {#1}}{1 + {#2}}\,
 }
 
-\newcommand{\pic}[2][1]{%
+\newcommandtwoopt{\pic}[3][1][]{%
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=#1\textwidth]{#2}
+		\includegraphics[width=#1\textwidth]{#3}
+		\if\relax\detokenize{#2}\relax\else
+			\caption{#2}
+		\fi
 	\end{figure}
 }
