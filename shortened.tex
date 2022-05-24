@@ -1,0 +1,26 @@
+\subsection{Shortened rectangle}
+\label{sbsc:shortened}
+
+Consider a horizontal rectangle $\D$.
+
+\begin{definition}
+	Rectangle $\D$ is called left-shortened,
+	if for subrectangle $\{3, 3\}$ the following condition takes place:
+	\begin{equation}
+		\label{eq:left-shortened}
+		\left| \D_1(3) \right| \leqslant 1.4 \cdot \left| \D_2(3) \right|.
+	\end{equation}
+\end{definition}
+
+Here, as in \ref{eq:horizontal_definition}, we allow terms $a_s$ for $s < i_1$ and $s > i_2$ to be integers $\{1, 2, 3\}$,
+so \ref{eq:left-shortened} can be rewritten as
+
+\begin{equation*}
+	\left|
+		\left[ 0; a_{-1}, ..., a_{i_1}, 3, \overline{3, 1} \right] -
+		\left[ 0; a_{-1}, ..., a_{i_1}, \overline{3, 1} \right]
+	\right| \leqslant \left|
+		\left[ 0; a_{1}, ..., a_{i_2}, 3, \overline{3, 1} \right] -
+		\left[ 0; a_{1}, ..., a_{i_2}, \overline{3, 1} \right]
+	\right|.
+\end{equation*}
