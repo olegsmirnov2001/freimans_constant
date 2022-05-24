@@ -1,0 +1,17 @@
+\subsection{Explanation of shortened}
+\label{sbsc:shortened_explanation}
+
+Notion left-shortened is used to set the lower bound $\D'$ for rectangle $\D$.
+
+Notion right-shortened is used to set the upper bound $\D''$.
+
+For example, when interested in $\D'$ when $i_1$ is even and $i_2$ is odd,
+one has to consider larger $a_{i_1 - 1}$ and smaller $a_{i_2 + 1}$.
+As the rectangle is horizontal, we will add terms to the left first.
+So we will check the condition \ref{eq:right-shortened} for $\{2,\}$ or $\{3,\}$.
+
+In other words, check whether $\{2,\}$ or $\{3,\}$ is left-shortened or left-normal
+(recall that $i_1 - 1$ and $i_2$ are odd, so left-shortenence is defined by \ref{eq:right-shortened}).
+
+Which subrectangle ($\{2,\}$ or $\{3,\}$) to take, however,
+depends on terms $a_{i_1 + 1}$ and $a_{i_1}$ (see \oldref{sbsc:boundaries_nonformal}).
