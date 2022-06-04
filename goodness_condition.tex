@@ -5,17 +5,16 @@
 A horizontal rectangle $\D$ is good, if
 \begin{equation}\label{goodness_condition}
 	\dfrac{\D_1}{\D_2} <
-	\left\{\begin{array}{ll}
-		3.8, & i_1 \equiv i_2 \pmod 2,\\
-		3.43, & i_1 \not\equiv i_2 \pmod 2.
+	\left\{\begin{array}{lll}
+		3.8, & i_1 \equiv i_2 \pmod 2, & \{\d(\M)\} \text{ meets \ref{eq:cont-frac-left-normal},} \\
+		3.43, & i_1 \not\equiv i_2 \pmod 2, & \{\d(\M)\} \text{ meets \ref{eq:cont-frac-left-normal},} \\
+		2.9, & \text{otherwise}.
 	\end{array}\right.
 \end{equation}
 
 \subsubsection{Universal $2,9$ bound}
 
 We will introduce a sufficient conditions for a rectangle to be good.
-
-Suppose that $i_1$ is even.
 
 \begin{designation}
 	For given continuations $\T\g$ and $\T\d$, denote by $\g$ and $\d$ the resulting continued fractions:
@@ -31,10 +30,12 @@ Suppose that $i_1$ is even.
 	and will be specified in each case separately.
 \end{designation}
 
+Suppose that $i_1$ is even.
+
 Remind that $|\D_1| \geqslant |\D_2|$, which means that
 
 \begin{equation*}
-	\dfrac{\left| \g' - \g'' \right|}{\left| \d' - \d'' \right|} \geqslant 1,
+	\dfrac{\left| \g'' - \g' \right|}{\left| \d'' - \d' \right|} \geqslant 1,
 \end{equation*}
 %
 where
@@ -116,16 +117,23 @@ regardless of the parity of $i_1$ and $i_2$ and the left or right shortness or n
 
 Now consider case $i_1 = i_2 \pmod 2$.
 
+Suppose that the right hand side $\{\d(\M)\}$ is left-normal,
+that is, meets \ref{eq:cont-frac-left-normal}.
+
+Equivalent, the case $a_{i_2} = 1$, $a_{i_2 - 1} = 3$ doesn't take place.
+
 \pic[0.5]{pic4}
 
-We will suppose case $a_{i_2} = 1$, $a_{i_2 - 1} = 3$ doesn't take place.
-
-We can substitute the folliwing $\g$'s and $\d$'s
+This assumption allows us to substitute the folliwing $\g$'s and $\d$'s
 into \ref{eq:goodness-in-deltas}:
 %
-\Ts{66}{63}{90}{3}
+\Ts[.]{66}{63}{90}{3}
 
-and instead of \ref{12.2} we will get
+The rhs left-normality leaves us hope that the bound $\D_2''$
+will be set to $\D_2(\T{3})$,
+so we are substituting $\T{\d''}$ with $\T{3}$ instead of $\T{30}$.
+
+Now, instead of \ref{12.2} we will get
 
 \begin{equation}\label{12.5}
 	0,253 < q
@@ -133,10 +141,10 @@ and instead of \ref{12.2} we will get
 	\dfrac{1 + p \T{66}}{1 + p' \T{90}}.
 \end{equation}
 
-This choise of $\T{\g'}$ and $\T{\d''}$ is fine,
+Such choise of $\T{\g'}$ and $\T{\d''}$ is fine,
 if the following inequality takes place:
 
-\begin{equation}\label{goodness_condition_1,4}
+\begin{equation}\label{12.6}
 	\d' - \d'' > 1,4 (\g' - \g''),
 \end{equation}
 
@@ -148,7 +156,7 @@ where
 	\T{\d''} = \T{1},
 \end{equation*}
 
-so we can rewrite \ref{goodness_condition_1,4} as
+so we can rewrite \ref{12.6} as
 
 \begin{equation}\label{12.7}
 	0,253 < q
@@ -179,7 +187,7 @@ or inequality
 	1,064.
 \end{equation*}
 
-Overall, we proved that \ref{12.5} is enough for rectangle to be good.
+Overall, we have proved that \ref{12.5} is enough for rectangle to be good.
 
 Suppose that
 
@@ -225,21 +233,18 @@ which is easily checked.
 \subsubsection{Case $i_1 \ne i_2 \pmod 2$}
 
 Now consider case $i_1 \ne i_2 \pmod 2$
-and, again, case $a_{i_2} = 1$, $a_{i_2 - 1} = 3$
+and, again, the right hand side $\{\d(\M)\}$ is left-normal,
+in other words, case $a_{i_2} = 1$, $a_{i_2 - 1} = 3$
 doesn't take place.
+
 Suppose that $i_1$ is even.
 
 \pic[0.6]{pic5}
 
-Taking
-\begin{equation*}
-	\T{\g'} = \T{66},\;
-	\T{\g''} = \T{59},\;
-	\T{\d'} = \T{3},\;
-	\T{\d''} = \T{90},
-\end{equation*}
+Substituting
+\Ts[]{66}{59}{3}{90}
 
-rewrite \ref{eq:goodness-in-deltas} as
+into \ref{eq:goodness-in-deltas}, obtain
 
 \begin{equation}\label{12.9}
 	0,2885
@@ -249,7 +254,7 @@ rewrite \ref{eq:goodness-in-deltas} as
 	\dfrac{1 + p \T{66}}{1 + p' \T{90}}.
 \end{equation}
 
-Suppose
+Suppose that
 
 \begin{equation}\label{goodness_condition_3,43}
 	\dfrac{\D_1}{\D_2} < 3,43
@@ -285,10 +290,10 @@ or
 	\dfrac{1 + p' \T{3}}{1 + p' \T{1}}
 	\dfrac{1 + p' \T{90}}{1 + p' \T{95}}
 	\dfrac{1 + p \T{1}}{1 + p \T{59}}
-	\dfrac{1 + p \T{95}}{1 + p \T{66}},
+	\dfrac{1 + p \T{95}}{1 + p \T{66}}.
 \end{equation*}
 
-increasing the right part, obtain
+Increasing the right part, obtain
 
 \begin{equation*}
 	1,0105
