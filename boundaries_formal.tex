@@ -4,7 +4,8 @@
 Let's now turn to concrete definitions and bounds.
 Remind that we are looking at the horizontal rectangle $\D$.
 
-Suppose that $i_1 = i_2 \pmod 2$, $i_1$ is even. (If $i_1$ is odd, then $\D'$ and $\D''$ are swapped.)
+Suppose that $i_1 \equiv i_2 \pmod 2$, $i_1$ is even.
+(If $i_1$ is odd, then $\D'$ and $\D''$ are swapped.)
 
 \subsubsection{Bounds for $\D'$}
 
@@ -99,16 +100,46 @@ Figure \ref{fg:rectangle-r-bound-choise} regulates the choise of the formulas.
 	\centering
 		\begin{tabular}{| l | c c c | c |}
 			\cline{1-5}
-			Case & $\D_1''$ & $\D_2''$ & Rectangle & $\D''$ \\
+				Case &
+				$\D_1''$ &
+				$\D_2''$ &
+				Rectangle &
+				$\D''$
+			\\
 			\cline{1-5}
-			I & \ref{eq:cont-frac-right-normal} & \ref{eq:cont-frac-right-normal} & \ref{eq:right-normal} $N-N-N$ & \ref{eq:bound-r-nnn} \\
-			IIa & \ref{eq:cont-frac-right-normal} & \ref{eq:cont-frac-right-normal} & \ref{eq:right-shortened} $N-N-S$ & \ref{eq:bound-r-nns-ns} \\
-			IIb & \ref{eq:cont-frac-right-normal} & \ref{eq:cont-frac-right-shortened} & $N-S$ & \ref{eq:bound-r-nns-ns} \\
-			III & \ref{eq:cont-frac-right-shortened} & \ref{eq:cont-frac-right-normal} & $S-N$ & \ref{eq:bound-r-ns} \\
-			IV & \ref{eq:cont-frac-right-shortened} & \ref{eq:cont-frac-right-shortened} & $S-S$ & \ref{eq:bound-r-sn} \\
+				I &
+				\ref{eq:cont-frac-right-normal} &
+				\ref{eq:cont-frac-right-normal} &
+				\ref{eq:right-normal} $N-N-N$ &
+				\ref{eq:bound-r-nnn}
+			\\
+				IIa &
+				\ref{eq:cont-frac-right-normal} &
+				\ref{eq:cont-frac-right-normal} &
+				\ref{eq:right-shortened} $N-N-S$ &
+				\ref{eq:bound-r-nns-ns}
+			\\
+				IIb &
+				\ref{eq:cont-frac-right-normal} &
+				\ref{eq:cont-frac-right-shortened} &
+				$N-S$ &
+				\ref{eq:bound-r-nns-ns}
+			\\
+				III &
+				\ref{eq:cont-frac-right-shortened} &
+				\ref{eq:cont-frac-right-normal} &
+				$S-N$ &
+				\ref{eq:bound-r-ns}
+			\\
+				IV &
+				\ref{eq:cont-frac-right-shortened} &
+				\ref{eq:cont-frac-right-shortened} &
+				$S-S$ &
+				\ref{eq:bound-r-sn}
+			\\
 			\cline{1-5}
 		\end{tabular}
-	\caption{Rules for choise of $\D''$ in case $i_1 = i_2 \pmod 2$.}
+	\caption{Rules for choise of $\D''$ in case $i_1 \equiv i_2 \pmod 2$.}
 	\label{fg:rectangle-r-bound-choise}
 \end{figure}
 
@@ -164,7 +195,7 @@ We will use rules from figure \ref{fg:rectangle-l-odd-bound-choise} to choose on
 		\\
 		\cline{1-5}
 	\end{tabular}
-	\caption{Rules for choise of $\D'$ in case $i_1 \ne i_2 \pmod 2$, $i_1$ is even.}
+	\caption{Rules for choise of $\D'$ in case $i_1 \not\equiv i_2 \pmod 2$, $i_1$ is even.}
 	\label{fg:rectangle-l-odd-bound-choise}
 \end{figure}
 
