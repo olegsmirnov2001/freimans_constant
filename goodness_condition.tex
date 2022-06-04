@@ -23,14 +23,19 @@ Remind that we suppose $|\D_1| \geqslant |\D_2|$, which means that
 	\dfrac{1 + p \T{95}}{1 + p' \T{95}} \leqslant 1.
 \end{equation*}
 
-Let's introduce the following designations:
-\begin{gather*}
-	\g = [0; a_{-1}, ..., a_{i_1}, \frac{1}{\T\g}], \\
-	\d = [0; a_{1}, ..., a_{i_2}, \frac{1}{\T\d}],
-\end{gather*}
+\begin{designation}
+	For given continuations $\T\g$ and $\T\d$, denote by $\g$ and $\d$ the resulting continued fractions:
+	\begin{gather*}
+		\g = [0; a_{-1}, ..., a_{i_1}, \frac{1}{\T\g}], \\
+		\d = [0; a_{1}, ..., a_{i_2}, \frac{1}{\T\d}].
+	\end{gather*}
 
-where $\Th$'s are some $\Th$'s from the Figure \oldref{fg:table-thetas},
-specified in each case separately.
+	As stated in \oldref{sbsc:introductory},
+	$\g$'s and $\d$'s correspond to the lhs and the rhs of $\M$, respectively.
+	
+	Variables $\Th$ will be taken from the Figure \oldref{fg:table-thetas}
+	and will be specified in each case separately.
+\end{designation}
 
 \begin{figure}[p]
 	\includegraphics[width=\textwidth]{table-thetas}
@@ -38,9 +43,9 @@ specified in each case separately.
 	\label{fg:table-thetas}
 \end{figure}
 
-If rectangle is good, then \ref{goodness_in_deltas} should take place:
+If rectangle is good, then \ref{eq:goodness-in-deltas} should take place:
 
-\begin{equation}\label{goodness_in_deltas}
+\begin{equation}\label{eq:goodness-in-deltas}
 	\g' - \g'' < |\d' - \d''|,
 \end{equation}
 
@@ -50,7 +55,7 @@ $\T{\g''} = \T{63}$,
 $\T{\d'} = \T{90}$,
 $\T{\d''} = \T{30}$.
 
-Inequality \ref{goodness_in_deltas} transforms into
+Inequality \ref{eq:goodness-in-deltas} transforms into
 
 \begin{equation}\label{12.2}
 	0,313 <
@@ -112,8 +117,8 @@ Now consider case $i_1 = i_2 \pmod 2$.
 We will suppose case $a_{i_2} = 1$, $a_{i_2 - 1} = 3$ doesn't take place.
 
 We can substitute the folliwing $\g$'s and $\d$'s
-into \ref{goodness_in_deltas}:
-
+into \ref{eq:goodness-in-deltas}:
+%
 \Ts{66}{63}{90}{3}
 
 and instead of \ref{12.2} we will get
@@ -230,7 +235,7 @@ Taking
 	\T{\d''} = \T{90},
 \end{equation*}
 
-rewrite \ref{goodness_in_deltas} as
+rewrite \ref{eq:goodness-in-deltas} as
 
 \begin{equation}\label{12.9}
 	0,2885
