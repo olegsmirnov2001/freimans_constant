@@ -4,32 +4,32 @@ Let's fix some terms of continued fraction $[0; q_1, q_2, q_3, ..., q_n]$.
 
 We will often need to measure difference
 \begin{equation*}
-	[0; q_1, q_2, q_3, ..., q_n, \frac{1}{\T_R}] - 
-	[0; q_1, q_2, q_3, ..., q_n, \frac{1}{\T_L}],
+	[0; q_1, q_2, q_3, ..., q_n, \frac{1}{\T{R}}] - 
+	[0; q_1, q_2, q_3, ..., q_n, \frac{1}{\T{L}}],
 \end{equation*}
 
-where $\T$'s are some continuations of the continued fraction.
+where $\T{}$'s are some continuations of the continued fraction.
 
-They generally look like $\T = [0;12\overline{13}]$ or something\footnote{%
+They generally look like $\T{} = [0;12\overline{13}]$ or something\footnote{%
 	Here, as always in this book, $\overset{k}{\overline{abc}}$
 	means $k$-times repetition of $abc$,
 	and $\overline{abc}$ means infinite repetition.}.
-We will set $\T$'s explicitly.
+We will set $\T{}$'s explicitly.
 
-For the general proof, $\T$'s will be taken from table \oldref{fg:table-thetas}.
+For the general proof, $\T{}$'s will be taken from table \oldref{fg:table-thetas}.
 
 \begin{designation}
-	For given continuation $\T_i$ denote by $\varepsilon_i$ the resulting continued fraction:
-	\begin{equation}\label{epsilon_rule} %\tag{3.4}
-		\varepsilon_i = [0; q_1, q_2, ..., q_n, \frac{1}{\T_i}].
+	For given continuation $\T{i}$ denote by $\varepsilon_i$ the resulting continued fraction:
+	\begin{equation}\label{epsilon_rule}
+		\varepsilon_i = [0; q_1, q_2, ..., q_n, \frac{1}{\T{i}}].
 	\end{equation}
 \end{designation}
 
 Then the following equality takes place:
 
-\begin{equation}\label{varepsilons_difference} %\tag{3.5}
+\begin{equation}\label{varepsilons_difference}
 	| \varepsilon_i - \varepsilon_j | = 
-	\dfrac{| \T_i - \T_j |}
+	\dfrac{| \T{i} - \T{j} |}
 	{Q_n^2 \left(1 + pQ_i\right) \left(1 + pQ_j\right)},
 \end{equation}
 

@@ -25,39 +25,41 @@
 \newcommand{\g}{\upgamma}
 \renewcommand{\d}{\delta}
 \newcommand{\D}{\Delta}
-\newcommand{\T}{\Theta}
+
+
+\newcommand{\T}[1]{\Theta_{#1}}
 
 
 \newcommand{\Ts}[5][,]{%
 	\begin{equation*}
-		\T_{\g'} = \T_{#2},\;
-		\T_{\g''} = \T_{#3},\;
-		\T_{\d'} = \T_{#4},\;
-		\T_{\d''} = \T_{#5}{#1}
+		\T{\g'} = \T{#2},\;
+		\T{\g''} = \T{#3},\;
+		\T{\d'} = \T{#4},\;
+		\T{\d''} = \T{#5}{#1}
 	\end{equation*}%
 }
 
 \newcommand{\Tspairs}[3][,]{
 	\begin{equation*}
-		\T_{\g'} = \T_{\d'} = \T_{#2},\;
-		\T_{\g''} = \T_{\d''} = \T_{#3}{#1}
+		\T{\g'} = \T{\d'} = \T{#2},\;
+		\T{\g''} = \T{\d''} = \T{#3}{#1}
 	\end{equation*}
 }
 
 \newcommand{\uu}[2]{
-	\dfrac{1 + p \T_{#1}}{1 + p \T_{#2}}\,
+	\dfrac{1 + p \T{#1}}{1 + p \T{#2}}\,
 }
 
 \newcommand{\up}[2]{
-	\dfrac{1 + p \T_{#1}}{1 + p' \T_{#2}}\,
+	\dfrac{1 + p \T{#1}}{1 + p' \T{#2}}\,
 }
 
 \newcommand{\pu}[2]{
-	\dfrac{1 + p' \T_{#1}}{1 + p \T_{#2}}\,
+	\dfrac{1 + p' \T{#1}}{1 + p \T{#2}}\,
 }
 
 \newcommand{\pp}[2]{
-	\dfrac{1 + p' \T_{#1}}{1 + p' \T_{#2}}\,
+	\dfrac{1 + p' \T{#1}}{1 + p' \T{#2}}\,
 }
 
 \newcommand{\nn}[2]{
