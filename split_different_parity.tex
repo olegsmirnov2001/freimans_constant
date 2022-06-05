@@ -1,3 +1,149 @@
 \section{Induction, $i_1 \not\equiv i_2 \pmod 2$}
 
-Now turn to induction.
+Let $\D = \{ a_{i_1}, ..., a_{i_2}\}$ be a horizontal rectangle,
+satisfying conditions from sections \oldref{sc:boundaries} and \oldref{sc:good}.
+
+This section deals with the case $i_1 \not\equiv i_2 \pmod 2$.
+
+Without loss of generality, we may assume that $i_1$ is even and, therefore, $i_2$ is odd.
+As the reader will see, the agrument is repeated for the different parity,
+up to differences in illustrations.
+
+\subsection{Case $\{, 1\}$ is good}
+
+At first, suppose that the subrectangle $\{,1\}$ is good.
+
+It is so, if
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tss{}{'}{66}{63}{70}{90}
+which can be rewritten with \ref{eq:aspect-ratio} as follows:
+\begin{equation}\label{14.2}
+	0,74 < q
+	\dfrac{1 + p\T{63}}{1 + p'\T{66}}
+	\dfrac{1 + p\T{70}}{1 + p'\T{90}}.
+\end{equation}
+
+Constants $\T{\g}$ and $\T{\d}$ are chosen to ensure that
+\begin{equation*}
+	\left[ \d, \d' \right] \subset \D_2,
+\end{equation*}
+regardless of the rules from the section \oldref{sc:boundaries} defining $\D_2'$ and $\D_2''$.
+
+From \ref{14.2} it follows that the original rectangle $\D$ is contained
+within the union of the subrectangles $\{1,\}$ and $\{,1\}$.
+
+Now we will try contradiction and suppose that
+\begin{equation}\label{14.3}
+	0,74 \geqslant q
+	\dfrac{1 + p\T{63}}{1 + p'\T{66}}
+	\dfrac{1 + p\T{70}}{1 + p'\T{90}}.
+\end{equation}
+
+We will use the inequality \ref{14.3} until the end of the section.
+
+
+\subsection{Case resection $\left[ \D_1(1)''; \D_1(2)' \right] \in \D$ is normal}
+
+Now suppose that the following inequality takes place:
+\begin{equation*}
+	\g - \g' > \d - \d',
+\end{equation*}
+where
+\Tss{}{'}{63}{35}{63}{70}
+which can be rewritten as
+\begin{equation}\label{14.5}
+	0,558 > q
+	\dfrac{1 + p\T{35}}{1 + p'\T{63}}
+	\dfrac{1 + p\T{63}}{1 + p'\T{70}}.
+\end{equation}
+
+If the rectangle $\D$ is of type $S-S$ or $S-N$,
+that is, the lower bound $\D'$ is defined using rules \ref{eq:bound-l-odd-sn} or \ref{eq:bound-l-odd-ss},
+then the splitting is finished, as $\D$ is contained within the union of $\{1,\}$ and $\{2,\}$.
+
+Now turn to case if \ref{14.5} takes place,
+and $\D$ is of type $N-S$ or $N-N$,
+so $\D'$ is set with one of the rules \ref{eq:bound-l-odd-ns} or \ref{eq:bound-l-odd-nn}.
+
+%Obtain the condition, equivalent to ``some other condition -- to be clarified''.
+Let's see when the subrectangle $\{3, 11\}$ is right-normal.
+The following condition should take place:
+
+\begin{equation*}
+	\g - \g' > 1,4 (\d - \d'),
+\end{equation*}
+where
+\Tss{}{'}{28}{22}{68}{65}
+which can be written as
+\begin{equation}\label{14.6}
+	0,345 > q
+	\dfrac{1 + p\T{22}}{1 + p'\T{65}}
+	\dfrac{1 + p\T{28}}{1 + p'\T{68}}.
+\end{equation}
+
+If the condition \ref{14.6} takes place, then ``here should be a picture''
+%\pic{}{}{}
+the inequality
+\begin{equation*}
+	\g - \g' > \d - \d',
+\end{equation*}
+where
+\Tss{}{'}{25}{3}{66}{63}
+which can be written as
+\begin{equation}\label{14.7}
+	0,322 > q
+	\dfrac{1 + p\T{3}}{1 + p'\T{63}}
+	\dfrac{1 + p\T{25}}{1 + p'\T{66}}.
+\end{equation}
+
+All in all, if rectangle $\D$ satisfies both conditions \ref{14.6} and \ref{14.7},
+then it can be split into $\{1,\}$, $\{2,\}$ and $\{3,\}$.
+
+Now suppose that at least one of \ref{14.6} and \ref{14.7} doesn't take place.
+We will show that then we can split $\D$ into $\{1,\}$, $\{2,\}$ and $\{3,1\}$.
+
+First, we need to check goodness of subcovering $\{3,1\}$.
+We will prove that it meets the sufficient condition \ref{eq:goodness-condition-3,43}.
+We need to show that
+\begin{equation}\label{14.8}
+	3,43 (\g - \g') > \left| \d - \d' \right|,
+\end{equation}
+where
+\Tss[.]{}{'}{28}{1}{95}{65}
+
+Inequality \ref{14.8} is equivalent to
+\begin{equation}
+	0,628 > q
+	\dfrac{1 + p\T{1}}{1 + p'\T{65}}
+	\dfrac{1 + p\T{28}}{1 + p'\T{95}}.
+\end{equation}
+
+Recalling \ref{14.5}, we have to show that
+\begin{equation*}
+	0,558
+	\dfrac{1 + p'\T{63}}{1 + p\T{35}}
+	\dfrac{1 + p'\T{70}}{1 + p\T{63}}
+	< 0,627
+	\dfrac{1 + p'\T{65}}{1 + p\T{1}}
+	\dfrac{1 + p'\T{95}}{1 + p\T{28}},
+\end{equation*}
+and it is true.
+
+Now show that the subrectangles $\{3,1\}$ and $\{2, 1\}$ intersect.
+
+First, let $a_{i_2} = 3$, so $\D_2'$ is set with the formula \ref{eq:bound-l-odd-ns}.
+
+The following inequality should take place:
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tss{}{'}{30}{25}{70}{90}
+which is transformed into
+\begin{equation}
+	0,328 < q \up{25}{70} \up{30}{90}.
+\end{equation}
+
