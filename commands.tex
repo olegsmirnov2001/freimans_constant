@@ -31,9 +31,6 @@
 \newcommand{\T}[1]{\Th_{#1}}
 
 
-\newcommand{\Ts}[5][,]{\Tss[#1]{'}{''}{#2}{#3}{#4}{#5}}
-\newcommand{\Tp}[5][,]{\Tss[#1]{}{'}{#2}{#3}{#4}{#5}}
-
 \newcommand{\Tss}[7][,]{%
 	\begin{equation*}
 		\T{\g#2} = \T{#4},\;
@@ -44,6 +41,9 @@
 	\end{equation*}%
 }
 
+\newcommand{\Ts}[5][,]{\Tss[#1]{'}{''}{#2}{#3}{#4}{#5}}
+\newcommand{\Tp}[5][,]{\Tss[#1]{}{'}{#2}{#3}{#4}{#5}}
+
 \newcommand{\Tspairs}[3][,]{
 	\begin{equation*}
 		\T{\g'} = \T{\d'} = \T{#2},\;
@@ -52,25 +52,19 @@
 	\end{equation*}
 }
 
-\newcommand{\uu}[2]{
-	\dfrac{1 + p \T{#1}}{1 + p \T{#2}}\,
+
+\newcommand{\tinymuskip}{\mkern 2mu}
+
+\newcommand{\nn}[4]{
+	\tinymuskip
+	\dfrac{1 + {#1} \T{#2}}{1 + {#3} \T{#4}}
+	\tinymuskip
 }
 
-\newcommand{\up}[2]{
-	\dfrac{1 + p \T{#1}}{1 + p' \T{#2}}\,
-}
-
-\newcommand{\pu}[2]{
-	\dfrac{1 + p' \T{#1}}{1 + p \T{#2}}\,
-}
-
-\newcommand{\pp}[2]{
-	\dfrac{1 + p' \T{#1}}{1 + p' \T{#2}}\,
-}
-
-\newcommand{\nn}[2]{
-	\dfrac{1 + {#1}}{1 + {#2}}\,
-}
+\newcommand{\uu}[2]{\nn{p}{#1}{p}{#2}}
+\newcommand{\up}[2]{\nn{p}{#1}{p'}{#2}}
+\newcommand{\pu}[2]{\nn{p'}{#1}{p}{#2}}
+\newcommand{\pp}[2]{\nn{p'}{#1}{p'}{#2}}
 
 
 \newcommandtwoopt{\pic}[3][1][]{%
@@ -80,5 +74,5 @@
 		\if\relax\detokenize{#2}\relax\else
 			\caption{#2}
 		\fi
-	\end{figure}
+	\end{figure}%
 }

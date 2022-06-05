@@ -45,9 +45,7 @@ where
 Using \ref{eq:aspect-ratio}, rewrite it as
 
 \begin{equation*}
-	q
-	\dfrac{1 + p \T{1}}{1 + p' \T{1}}
-	\dfrac{1 + p \T{95}}{1 + p' \T{95}} \leqslant 1.
+	q \up{1}{1} \up{95}{95} \leqslant 1.
 \end{equation*}
 
 Goodness can be written as
@@ -63,10 +61,7 @@ For an arbitraty rectangle $\D$, taking
 Inequality \ref{eq:goodness-in-deltas} transforms into
 
 \begin{equation}\label{12.2}
-	0,313 <
-	q
-	\dfrac{1 + p \T{63}}{1 + p' \T{30}}
-	\dfrac{1 + p \T{66}}{1 + p' \T{90}}.
+	0,313 < q \up{63}{30} \up{66}{90}.
 \end{equation}
 
 Suppose that
@@ -78,34 +73,19 @@ Suppose that
 which is equivalent to
 
 \begin{equation}
-	\dfrac{1}{q}
-	\dfrac{1 + p' \T{1}}{1 + p \T{1}}
-	\dfrac{1 + p' \T{95}}{1 + p \T{95}}
-	<
-	2,9.
+	\dfrac{1}{q} \pu{1}{1} \pu{95}{95} < 2,9.
 \end{equation}
 
 Then \ref{12.2} takes place. Indeed, it is so, if
 
 \begin{equation*}
-	\dfrac{1}{2,9}
-	\dfrac{1 + p' \T{1}}{1 + p \T{1}}
-	\dfrac{1 + p' \T{95}}{1 + p \T{95}}
-	>
-	0,313
-	\dfrac{1 + p' \T{30}}{1 + p \T{63}}
-	\dfrac{1 + p' \T{90}}{1 + p \T{66}}.
+	\dfrac{1}{2,9} \pu{1}{1} \pu{95}{95} > 0,313 \pu{30}{63} \pu{90}{66}.
 \end{equation*}
 
 or, equivalent,
 
 \begin{equation*}
-	1,1
-	>
-	\dfrac{1 + p \T{1}}{1 + p \T{63}}
-	\dfrac{1 + p \T{95}}{1 + p \T{66}}
-	\dfrac{1 + p' \T{30}}{1 + p' \T{1}}
-	\dfrac{1 + p' \T{90}}{1 + p' \T{95}},
+	1,1 > \uu{1}{63} \uu{95}{66} \pp{30}{1} \pp{90}{95},
 \end{equation*}
 
 which is checked directly.
@@ -136,9 +116,7 @@ so we are substituting $\T{\d''}$ with $\T{3}$ instead of $\T{30}$.
 Now, instead of \ref{12.2} we will get
 
 \begin{equation}\label{12.5}
-	0,253 < q
-	\dfrac{1 + p \T{63}}{1 + p' \T{3}}
-	\dfrac{1 + p \T{66}}{1 + p' \T{90}}.
+	0,253 < q \up{63}{3} \up{66}{90}.
 \end{equation}
 
 Such choise of $\T{\g'}$ and $\T{\d''}$ is fine,
@@ -159,30 +137,21 @@ where
 so we can rewrite \ref{12.6} as
 
 \begin{equation}\label{12.7}
-	0,253 < q
-	\dfrac{1 + p \T{65}}{1 + p' \T{1}}
-	\dfrac{1 + p \T{68}}{1 + p' \T{28}}.
+	0,253 < q \up{65}{1} \up{68}{28}.
 \end{equation}
 
 We can notice that \ref{12.7} follows from \ref{12.5}. Indeed, that follows from the inequality
 
 \begin{equation*}
-	0,253
-	\dfrac{1 + p' \T{3}}{1 + p' \T{63}}
-	\dfrac{1 + p \T{90}}{1 + p \T{66}}
+	0,253 \pp{3}{63} \uu{90}{66}
 	>
-	0,269
-	\dfrac{1 + p' \T{1}}{1 + p' \T{65}}
-	\dfrac{1 + p \T{28}}{1 + p \T{68}},
+	0,269 \pp{1}{65} \uu{28}{68},
 \end{equation*}
 
 or inequality
 
 \begin{equation*}
-	\dfrac{1 + p \T{65}}{1 + p \T{63}}
-	\dfrac{1 + p \T{68}}{1 + p \T{66}}
-	\dfrac{1 + p' \T{3}}{1 + p' \T{1}}
-	\dfrac{1 + p' \T{90}}{1 + p' \T{28}}
+	\uu{65}{63} \uu{68}{66} \pp{3}{1} \pp{90}{28}
 	>
 	1,064.
 \end{equation*}
@@ -198,9 +167,7 @@ Suppose that
 or
 
 \begin{equation*}
-	\dfrac{1}{q}
-	\dfrac{1 + p' \T{1}}{1 + p \T{1}}
-	\dfrac{1 + p' \T{95}}{1 + p \T{95}}
+	\dfrac{1}{q} \pu{1}{1} \pu{95}{95}
 	<
 	3,8.
 \end{equation*}
@@ -208,13 +175,9 @@ or
 Then \ref{12.5} takes place. Indeed, it is so, if
 
 \begin{equation*}
-	\dfrac{1}{3,8}
-	\dfrac{1 + p' \T{1}}{1 + p' \T{1}}
-	\dfrac{1 + p \T{95}}{1 + p \T{95}}
+	\dfrac{1}{3,8} \pu{1}{1} \pu{95}{95}
 	>
-	0,253
-	\dfrac{1 + p' \T{3}}{1 + p' \T{63}}
-	\dfrac{1 + p \T{90}}{1 + p \T{66}}.
+	0,253 \pp{3}{63} \uu{90}{66}.
 \end{equation*}
 
 The last inequality is transformed into
@@ -222,10 +185,7 @@ The last inequality is transformed into
 \begin{equation*}
 	1,04
 	>
-	\dfrac{1 + p' \T{3}}{1 + p' \T{1}}
-	\dfrac{1 + p' \T{90}}{1 + p' \T{95}}
-	\dfrac{1 + p \T{1}}{1 + p \T{63}}
-	\dfrac{1 + p \T{95}}{1 + p \T{66}},
+	\pp{3}{1} \pp{90}{95} \uu{1}{63} \uu{95}{66},
 \end{equation*}
 
 which is easily checked.
@@ -249,9 +209,7 @@ into \ref{eq:goodness-in-deltas}, obtain
 \begin{equation}\label{12.9}
 	0,2885
 	<
-	q
-	\dfrac{1 + p \T{59}}{1 + p' \T{3}}
-	\dfrac{1 + p \T{66}}{1 + p' \T{90}}.
+	q \up{59}{3} \up{66}{90}.
 \end{equation}
 
 Suppose that
@@ -263,9 +221,7 @@ Suppose that
 or
 
 \begin{equation*}
-	\dfrac{1}{q}
-	\dfrac{1 + p' \T{1}}{1 + p \T{1}}
-	\dfrac{1 + p' \T{95}}{1 + p \T{95}}
+	\dfrac{1}{q} \pu{1}{1} \pu{95}{95}
 	<
 	3,43.
 \end{equation*}
@@ -273,13 +229,9 @@ or
 Then \ref{12.9} takes place. Indeed, it is so, if
 
 \begin{equation*}
-	\dfrac{1}{3,43}
-	\dfrac{1 + p' \T{1}}{1 + p \T{1}}
-	\dfrac{1 + p' \T{95}}{1 + p \T{95}}
+	\dfrac{1}{3,43} \pu{1}{1} \pu{95}{95}
 	>
-	0,2885
-	\dfrac{1 + p' \T{3}}{1 + p \T{59}}
-	\dfrac{1 + p' \T{90}}{1 + p \T{66}}.
+	0,2885 \pu{3}{59} \pu{90}{66}.
 \end{equation*}
 
 or
@@ -287,10 +239,7 @@ or
 \begin{equation*}
 	1,0105
 	>
-	\dfrac{1 + p' \T{3}}{1 + p' \T{1}}
-	\dfrac{1 + p' \T{90}}{1 + p' \T{95}}
-	\dfrac{1 + p \T{1}}{1 + p \T{59}}
-	\dfrac{1 + p \T{95}}{1 + p \T{66}}.
+	\pp{3}{1} \pp{90}{95} \uu{1}{59} \uu{95}{66}.
 \end{equation*}
 
 Increasing the right part, obtain
@@ -298,7 +247,7 @@ Increasing the right part, obtain
 \begin{equation*}
 	1,0105
 	>
-	0,9896
+	0,9896 \,
 	\dfrac
 	{1 + p \cdot 1,0551 + p^2 \cdot 0,20875}
 	{1 + p \cdot 0,983 + p^2 \cdot 0,237},
