@@ -5,8 +5,13 @@ satisfying conditions from sections \oldref{sc:boundaries} and \oldref{sc:good}.
 
 This section deals with the case $i_1 \not\equiv i_2 \pmod 2$.
 
+It is easier, because in this case both the lower-left and upper-right corners
+are filled with the ``wide'' rectangles $\{1,\}$ and $\{,1\}$ (see figure \oldref{fg:subrectangles-10-01}).
+In case $i_1 \equiv i_2 \pmod 2$ the lower-left corner, filled with $\{3,3\}$,
+will be a pain in the neck.
+
 Without loss of generality, we may assume that $i_1$ is even and, therefore, $i_2$ is odd.
-As the reader will see, the agrument is repeated for the different parity,
+As the reader will see, the agrument is repeated for the opposite parity,
 up to differences in illustrations.
 
 \subsection{Case $\{, 1\}$ is good}
@@ -14,6 +19,9 @@ up to differences in illustrations.
 At first, suppose that the subrectangle $\{,1\}$ is good.
 
 It is so, if
+
+\pic[0.5]{induction-odd-2}
+
 \begin{equation*}
 	\g - \g' < \d - \d',
 \end{equation*}
@@ -33,7 +41,7 @@ regardless of the rules from the section \oldref{sc:boundaries} defining $\D_2'$
 From \ref{14.2} it follows that the original rectangle $\D$ is contained
 within the union of the subrectangles $\{1,\}$ and $\{,1\}$.
 
-\pic[0.4]{induction-odd-1}
+\pic[0.4][\label{fg:subrectangles-10-01} Subrectangles $\{1,\}$ and $\{,1\}$.]{induction-odd-1}
 
 Now we will try contradiction and suppose that
 \begin{equation}\label{14.3}
@@ -46,6 +54,7 @@ We will use the inequality \ref{14.3} until the end of the section.
 \subsection{Case $\D$ is left-shortened}
 
 Now suppose that the following inequality takes place:
+\pic[0.5]{induction-odd-3}
 \begin{equation*}
 	\g - \g' > \d - \d',
 \end{equation*}
@@ -70,6 +79,8 @@ so $\D'$ is set with one of the rules \ref{eq:bound-l-odd-nn} or \ref{eq:bound-l
 %Obtain the condition, equivalent to ``some other condition -- to be clarified''.
 Let's see when the subrectangle $\{3, 11\}$ is right-normal.
 The following condition should take place:
+
+\pic[0.5]{induction-odd-4}
 
 \begin{equation*}
 	\g - \g' > 1,4 (\d - \d'),
