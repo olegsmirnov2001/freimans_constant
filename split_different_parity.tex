@@ -92,8 +92,8 @@ which can be written as
 	0,345 > q \up{22}{65} \up{28}{68}.
 \end{equation}
 
-If the condition \ref{14.6} takes place, then ``here should be a picture''
-%\pic{}{}{}
+\pic[0.5]{pic5}
+If the condition \ref{14.6} takes place, then
 the inequality
 \begin{equation*}
 	\g - \g' > \d - \d',
@@ -121,9 +121,9 @@ where
 \Tp[.]{28}{1}{95}{65}
 
 Inequality \ref{14.8} is equivalent to
-\begin{equation}
+\begin{equation*}
 	0,628 > q \up{1}{65} \up{28}{95}.
-\end{equation}
+\end{equation*}
 
 Recalling \ref{14.5}, we have to show that
 \begin{equation*}
@@ -137,13 +137,130 @@ Now show that the subrectangles $\{3,1\}$ and $\{2, 1\}$ intersect.
 First, let $a_{i_2} = 3$, so $\D_2'$ is set with the formula \ref{eq:bound-l-odd-ns}.
 
 The following inequality should take place:
-\begin{equation*}
+\begin{equation}\label{14.9}
 	\g - \g' < \d - \d',
-\end{equation*}
+\end{equation}
 where
 \Tp{30}{25}{70}{90}
 which is transformed into
-\begin{equation}
+\begin{equation}\label{14.10}
 	0,328 < q \up{25}{70} \up{30}{90}.
 \end{equation}
 
+If \ref{14.6} doesn't take place, then we need the following inequality for \ref{14.10}:
+\begin{equation*}
+	0,345 \pu{65}{22} \pu{68}{28} > 0,328 \pu{70}{25} \pu {90}{30},
+\end{equation*}
+or
+\begin{equation*}
+	1,05 > \pp {70}{65} \pp{90}{68} \uu{22}{25} \uu{28}{30}.
+\end{equation*}
+
+From $a_{i_2} = 3$ it follows that $p' \leqslant \frac{1}{3}$.
+Setting $p' = \frac{1}{3}$ and $p = \frac{1}{4}$ in the rhs, increasing it and obtaining the correct inequality.
+Thus, it is correct.
+
+Now suppose that \ref{14.6} takes place, while \ref{14.7} doesn't.
+Setting $\T{\d} = \T{66}$ (instead of $\T{70}$) in \ref{14.9}, get the following inequality:
+
+\begin{equation}\label{14.11}
+	0,288 < q \up{25}{66} \up{30}{90}.
+\end{equation}
+
+Inequality \ref{14.11} follows from denial of inequality \ref{14.7}, if
+\begin{equation*}
+	0,322 \pu{63}{3} \pu{66}{25} > 0,298 \pu{66}{25} \pu{90}{30}
+\end{equation*}
+or, equivalent,
+\begin{equation*}
+	1,08 > \uu{3}{30} \pp{90}{63}.
+\end{equation*}
+
+Setting $p = \frac{1}{4}$ and $p' = \frac{1}{3}$, easily check the last inequality.
+
+\subsection{Case we can consider $\{2, 1\}$}
+
+Now consider the case, when $a_{i_2} \ne 3$ and $\D_1'$ is defined with \ref{eq:bound-l-odd-nn}.
+
+For the subrectangle $\{2, 1\}$ left-normality we need
+\begin{equation}\label{14.12}
+	1,4 (\g - \g') < \| \d - \d' \|,
+\end{equation}
+where
+\Tp[,]{33}{29}{95}{92}
+so \ref{14.12} can be rewritten as
+\begin{equation}\label{14.13}
+	0,182 < q \up{29}{92} \up{33}{95}.
+\end{equation}
+
+If neither \ref{14.6} nor \ref{14.7} takes place, then it's easy to check \ref{14.13}.
+
+In \ref{14.9} we can set $\T{\g'} = \T{94}$ (instead of $\T{90}$), so \ref{14.9} is transformed into
+\begin{equation}\label{14.14}
+	0,248 < q \up{25}{70} \up{30}{94}.
+\end{equation}
+
+If \ref{14.6} doesn't take place, then for \ref{14.14} we will check the following:
+
+\begin{gather*}
+	0,345 \pu{65}{22} \pu{68}{28} > 0,248 \pu{70}{25} \pu{94}{30}\\
+	\ArrowBetweenLines
+	1,39 > \pp{70}{65} \pp{94}{68} \uu{22}{25} \uu{28}{30},
+\end{gather*}
+which is clear.
+
+If \ref{14.7} doesn't take place, then for \ref{14.14} we will check
+\begin{gather*}
+	0,322 \pu{63}{3} \pu{66}{25} > 0,248 \pu{70}{25} \pu{94}{30}\\
+	\ArrowBetweenLines
+	1,29 > \uu{3}{30} \pp{70}{63} \pp{94}{66},
+\end{gather*}
+which is true.
+
+\subsection{Further plan}
+
+It remains for us to check the case if \ref{14.3} takes place and \ref{14.5} doesn't --
+instead, having the negation of \ref{14.5}:
+\begin{equation}\label{14.15}
+	0,558 \leqslant q \up{35}{63} \up{63}{70}.
+\end{equation}
+
+We have proved that we can consider subrectangles $\{1,\}$ and $\{2, 2\}$.
+\pic[0.5]{pic6}
+The picture illustrates the case when
+the boundaries $\D_1'$ and $\D_2''$ of segments $\D_1$ and $\D_2$ are defined
+with constants $\T{\D_1'} = \T{\D_2''} = \T{30} = \left[0; 213\overline{12}\right]$.
+In this case, having, in particular, $a_{i_1} = 1$, $a_{i_1 + 1} = 3$.
+We set segment $\D_1$ to be left-shortened to forbid $a_{i_1 - 1} = 3$,
+because it can happen that we will face the forbidden combination $(31313)$.
+
+So, in the illustrated case, the only unused subsegment is $\{2, 1\}$.
+However, subsegments $\{2, 1\}$ and $\{2, 2\}$ doesn't intersect,
+so we will be unable to construct a family of subsegments, covering $\D$.
+
+How to overcome this difficulty?
+The idea being developed is to use $a_{i_1 - 1} = 3$ (and $a_{i_2 + 1} = 3$),
+but set $a_{i_1 - 2},\, a_{i_1 - 3}$ (and $a_{i_2 + 2},\, a_{i_2 + 3}$),
+which produce the thinner subrectangles and doesn't occur in string $(31313)$.
+
+\subsection{List of subrectangles}
+
+Let's turn to formal plan.
+
+If $\D_1'$ and $\D_2''$ were set with $\T{3} = \left[0; 3\overline{12}\right]$,
+then we would have been able to take $\{3, 3\}$, which intersects with $\{2, 2\}$.
+
+Instead of $\{3, 3\}$, we will take the following list of subrectangles:
+\begin{gather*}
+	\{23, 32\}, \{23, 33\} \,(\text{or } \{223, 33\} \text{ and } \{323, 33\}), \{113, 311\},\\
+	\{213, 312\}, \{213, 311\}, \{113, 32\}, \{113, 33\} \,(\text{or } \{1113, 33\}), \{213, 33\}.
+\end{gather*}
+\pic[0.9][
+	Illustration of the subrectangles replacing the subrectangle $\{3,3\}$.\\
+	I will make a 2d illustration in the future.
+]{subrectangles-instead-3-3}
+
+The next subrectangle to consider is $\{3,2\}$, but instead we will consider the following subrectangles:
+\begin{equation*}
+	\{33, 213\}, \{33, 212\}, \{23, 213\}, \{23, 212\}, \{23, 211\}.
+\end{equation*}
