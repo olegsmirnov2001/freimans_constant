@@ -319,14 +319,12 @@ Subrectangle $\{223, 33\}$ is right-normal, since
 	1,4 (\g - \g' < \d - \d'),
 \end{equation*}
 where
-\begin{equation*}
-	\begin{aligned}
-		&\T{\g} = \left[0; 322 \overline{31}\right] = 0,293294,\\
-		&\T{\g'} = \left[0; 3223\overline{31}\right] = 0,293176,\\
-		&\T{\d} = \T{22},\\
-		&\T{\d'} = \left[0;333\overline{31}\right] = 0,302806,
-	\end{aligned}
-\end{equation*}
+\begin{align*}
+	&\T{\g} = \left[0; 322 \overline{31}\right] = 0,293294,\\
+	&\T{\g'} = \left[0; 3223\overline{31}\right] = 0,293176,\\
+	&\T{\d} = \T{22},\\
+	&\T{\d'} = \left[0;333\overline{31}\right] = 0,302806,
+\end{align*}
 transforms into
 \begin{equation*}
 	0,457 < q \up{\g}{\d} \up{\g'}{'d'},
@@ -486,3 +484,95 @@ Now suppose that \ref{14.22}, the negation of \ref{14.21}, takes place:
 \end{equation}
 
 Return to condition \ref{14.1}.
+Let's see when the subrectangle $\{11, 1\}$ is left-normal.
+The condition
+\begin{equation*}
+	1,4 (\g - \g') < \d - \d',
+\end{equation*}
+where
+\Tp[,]{68}{65}{92}{95}
+expands to
+\begin{equation*}
+	0,443 < q \up{65}{92} \up{68}{95}
+\end{equation*}
+and follows from \ref{14.22}.
+Thus in case $a_{i_2} \ne 3$ we can use the following $\Th$'s in \ref{14.1}:
+\Tp[,]{66}{63}{70}{94}
+so \ref{14.1} expands to
+\begin{equation}\label{14.23}
+	0,556 < q \up{63}{70} \up{66}{94}.
+\end{equation}
+
+Overall, if $a_{i_2} \ne 3$, then we can assume that
+\begin{equation}\label{14.24}
+	0,556 \geqslant a \up{63}{70} \up{66}{94}.
+\end{equation}
+
+Consider subrectangle $\{33, 213\}$.
+We will show that it intersects with $\{2,2\}$.
+The condition
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tp[,]{30}{25}{30}{63}
+expands to
+\begin{equation}\label{14.25}
+	0,638 < q \up{25}{30} \up{30}{63}.
+\end{equation}
+
+Condition \ref{14.25} follows from \ref{14.22}, if
+\begin{gather*}
+	0,662 \pu{20}{3} \pu{66}{63} > 0,638 \pu{30}{25} \pu{63}{30}\\
+	\ArrowBetweenLines
+	1,037 > \pp{30}{20} \pp{63}{66} \uu{3}{25} \uu{63}{30}.
+\end{gather*}
+
+Transform this inequality, increasing the right part:
+\begin{multline*}
+	1,037 >
+	\dfrac{1 + 0,8p' + 0,15 p'^2}{1 + 0,85p' + 0,15 p'^2}
+	\dfrac{1 + 0,71p + 0,13p^2}{1 + 0,66p + 0,13p^2} =\\
+	=
+	\left(
+		1 - \dfrac{0,05p'}{1 + 0,85p' + 0,15p'^2}
+	\right)
+	\left(
+		1 + \dfrac{0,05p}{1 + 0,66p + 0,13p^2}
+	\right).
+\end{multline*}
+
+Checking the last inequality by substituting $p'$ with $0,25$ and $p$ with $0,8$.
+
+Showing that $\{33, 213\}$ is left-normal.
+The following condition should take place:
+\begin{equation*}
+	\g - \g' > 1,4(\d - \d'),
+\end{equation*}
+where
+\begin{equation*}
+	\T{\g} = \left[0; 333 \overline{31}\right] = 0,302806,
+	\T{\g'} = \T{22},
+	\T{\d} = \T{31},
+	\T{\d'} = \T{33},
+\end{equation*}
+which expands to
+\begin{equation}\label{14.26}
+	0,85 > q \up{22}{31} \up{\g}{33}.
+\end{equation}
+
+Now show that \ref{14.26} follows from \ref{14.24} in case $a_{i_2} \ne 3$.
+We need to check the inequality
+\begin{gather*}
+	0,556 \pu{70}{63} \pu{94}{66} < 0,85 \pu{31}{22} \pu{33}{\g}\\
+	\ArrowBetweenLines
+	\pp{70}{31} \pp{94}{33} \uu{22}{63} \uu{\g}{66} < 1,5.
+\end{gather*}
+
+If $a_{i_2} = 3$, then \ref{14.26} follows from \ref{14.3}.
+Indeed, check the following inequality:
+\begin{gather*}
+	0,74 \pu{70}{63} \pu{90}{66} < 0,85 \pu{31}{21} \pu{33}{\g}\\
+	\ArrowBetweenLines
+	\pp{70}{31} \pu{90}{33} \uu{22}{63} \uu{\g}{66} < 1,15.
+\end{gather*}
