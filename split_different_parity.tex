@@ -22,9 +22,9 @@ It is so, if
 
 \pic[0.5]{induction-odd-2}
 
-\begin{equation*}
+\begin{equation}\label{14.1}
 	\g - \g' < \d - \d',
-\end{equation*}
+\end{equation}
 where
 \Tp{66}{63}{70}{90}
 which can be rewritten with \ref{eq:aspect-ratio} as follows:
@@ -260,3 +260,229 @@ The next subrectangle to consider is $\{3,2\}$, but instead we will consider the
 \begin{equation*}
 	\{33, 213\}, \{33, 212\}, \{23, 213\}, \{23, 212\}, \{23, 211\}.
 \end{equation*}
+
+\subsection{Correctness proof}
+
+We will show that the projections of adjacent subrectangles intersect and every of them is good.
+
+Show that $\{23,32\}$ is good.
+Indeed, the condition
+\begin{equation*}
+	\g - \g' < 3,43(\d - \d'),
+\end{equation*}
+where
+\Tp[,]{21}{15}{15}{21}
+is equivalent to
+\begin{equation*}
+	0,3 < q \up{15}{15} \up{21}{21}
+\end{equation*}
+and follows from \ref{14.15}.
+
+Subrectangle $\{23, 32\}$ intersects with $\{2,2\}$. The following inequality is required:
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tp[,]{30}{19}{16}{59}
+so obtain condition
+\begin{equation*}
+	0,4612 < q \up{19}{16} \up{30}{59},
+\end{equation*}
+which follows from 15:
+\begin{gather*}
+	0,558 \pu{63}{35} \pu{70}{63} > 0,4612 \pu{16}{19} \pu{59}{30}\\
+	\ArrowBetweenLines
+	1,2 > \pp{16}{63} \pp{59}{70} \uu{35}{19} \uu{63}{30},
+\end{gather*}
+and the last line is obvious.
+
+Checking the goodness of $\{23, 33\}$.
+The condition
+\begin{equation*}
+	\g - \g' < 3,43(\d - \d')
+\end{equation*}
+should take place for
+\Tp[,]{21}{15}{22}{28},
+and it can be rewritten as follows:
+\begin{equation}\label{14.16}
+	0,533 < q \up{15}{22} \up{21}{28}.
+\end{equation}
+
+If \ref{14.16} takes place, then we take $\{23, 33\}$.
+Checking that $\{23, 33\}$ intersects with $\{23, 32\}$ is easy.
+If \ref{14.16} doesn't take place, then we take $\{223, 33\}$ and $\{323, 33\}$ instead.
+
+At first, showing that $\{223, 33\}$ and $\{23, 32\}$ intersect.
+
+Subrectangle $\{223, 33\}$ is right-normal, since
+\begin{equation*}
+	1,4 (\g - \g' < \d - \d'),
+\end{equation*}
+where
+\begin{equation*}
+	\begin{aligned}
+		&\T{\g} = \left[0; 322 \overline{31}\right] = 0,293294,\\
+		&\T{\g'} = \left[0; 3223\overline{31}\right] = 0,293176,\\
+		&\T{\d} = \T{22},\\
+		&\T{\d'} = \left[0;333\overline{31}\right] = 0,302806,
+	\end{aligned}
+\end{equation*}
+transforms into
+\begin{equation*}
+	0,457 < q \up{\g}{\d} \up{\g'}{'d'},
+\end{equation*}
+and it follows from \ref{14.15}, if
+\begin{equation*}
+	1,22 > \pp{\d}{63} \pp{\d'}{70} \uu{35}{\g} \uu{63}{\g'},
+\end{equation*}
+which is clear.
+
+Now the condition
+\begin{equation*}
+	\g - \g' > \d - \d',
+\end{equation*}
+where
+\begin{equation*}
+	\T{\g} = \left[0; 3223\overline{12}\right] = 0,293283,\; \T{\g'} = \T{16},\; \T{\d} = \T{20},\; \T{\d'} = \T{23},
+\end{equation*}
+transforms into
+\begin{equation*}
+	0,561 > q \up{16}{20} \up{\g}{23},
+\end{equation*}
+and it follows from negation of \ref{14.16}.
+
+Let's try to take next subrectangle $\{113, 32\}$.
+Let's see if it intersects with $\{23, 33\}$ (or $\{323, 33\}$).
+The condition of intersection
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tp[,]{16}{13}{18}{25}
+is equivalent to
+\begin{equation}\label{14.17}
+	0,7 < q \up{13}{18} \up{16}{25}.
+\end{equation}
+
+Assume that \ref{14.17} doesn't take place:
+\begin{equation}\label{14.18}
+	0,7 \geqslant a \up{13}{18} \up{16}{25}.
+\end{equation}
+
+Take subrectangle $\{113, 311\}$ and show that it intersects with $\{23, 33\}$.
+The following inequality should take place:
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tp{16}{13}{10}{25}
+
+Obtain
+\begin{equation*}
+	0,314 < q \up{13}{10} \up{16}{25},
+\end{equation*}
+which follows from \ref{14.15}.
+
+Now show that $\{213, 312\}$ intersects with $\{113, 311\}$.
+
+The condition
+\begin{equation*}
+	\g - \g' < \d - \d',
+\end{equation*}
+where
+\Tp[,]{8}{5}{3}{11},
+which transforms into
+\begin{equation*}
+	0,338 < q \up{3}{3} \up{8}{11},
+\end{equation*}
+and it follows from \ref{14.15}.
+
+Show that $\{213, 311\}$ intersects with $\{213, 312\}$.
+The condition
+\begin{equation*}
+	\g - \g' > \d - \d',
+\end{equation*}
+where
+\Tp[,]{5}{3}{5}{8}
+transforms into
+\begin{equation}\label{14.19}
+	0,77 > q \up{3}{5} \up{5}{8}.
+\end{equation}
+Inequality \ref{14.19} follows from \ref{14.18}, if
+\begin{gather*}
+	0,7 \pu{18}{13} \pu{25}{16} < 0,77 \pu{5}{3} \pu{8}{5}\\
+	\ArrowBetweenLines
+	\pp{18}{5} \pp{25}{8} \uu{3}{13} \uu{5}{16} < 1,1,
+\end{gather*}
+which is true.
+
+Constant $\T{\d'}$ can be set to $\T{8}$, only if $\{213, 311\}$ is right-normal, for which the condition
+\begin{equation*}
+	\g - \g' > 1,4 (\d - \d'),
+\end{equation*}
+where
+\Tp[,]{9}{7}{4}{6}
+should take place.
+It is equivalent to
+\begin{equation*}
+	0,8 > q \up{7}{4} \up{9}{6},
+\end{equation*}
+which is true in consideration of \ref{14.18}.
+
+Finally, it is very easy to check that $\{113, 32\}$ intersects with $\{213, 311\}$.
+
+Overall, regardless of whether condition 17 is satisfied or not, we come to subrectangle $\{113, 32\}$.
+Further we note that it intersects with $\{113, 33\}$.
+We will check here that the latter one is good.
+The following inequality is required:
+\begin{equation*}
+	\g - \g' < 3,8 (\d - \d'),
+\end{equation*}
+where
+\Tp[,]{14}{7}{22}{28}
+and obtain
+\begin{equation*}
+	0,44 < q \up{7}{22} \up{14}{28},
+\end{equation*}
+which follows from \ref{14.15}.
+
+It is easily checked that $\{113, 33\}$ intersects with $\{213, 32\}$.
+
+Let's find the condition for the subrectangle $\{2, 11\}$ to be right-normal.
+\begin{equation*}
+	\g - \g' > 1,4 (\d - \d'),
+\end{equation*}
+where
+\Tp[,]{64}{61}{65}{68}
+which is equivalent to
+\begin{equation}\label{14.20}
+	0,714 > q \up{61}{65} \up{64}{68}.
+\end{equation}
+
+Let's find the condition for subrectangle $\{2, 11\}$ to intersect with $\{213, 32\}$:
+\begin{equation*}
+	\g - \g' > \d - \d',
+\end{equation*}
+where
+\Tp[,]{63}{3}{20}{66}
+which is equivalent to
+\begin{equation}\label{14.21}
+	0,662 > q \up{3}{20} \up{63}{66}.
+\end{equation}
+
+The condition \ref{14.20} follows from \ref{14.21}, because
+\begin{gather*}
+	0,662 > q \pu{30}{3} \pu{66}{63} < 0,714 \pu{65}{61} \pu{68}{64}\\
+	\ArrowBetweenLines
+	\pp{20}{65} \pp{66}{68} \uu{61}{3} \uu{64}{63} < 1,078,
+\end{gather*}
+which is easily checked.
+
+In consideration of \ref{14.21}, we come to $\{2,11\}$.
+
+Now suppose that \ref{14.22}, the negation of \ref{14.21}, takes place:
+\begin{equation}\label{14.22}
+	0,662 \leqslant q \up{3}{20} \up{63}{66}.
+\end{equation}
+
+Return to condition \ref{14.1}.
