@@ -1,2 +1,62 @@
 \section{Induction, $i_1 \equiv i_2 \pmod 2$}
 
+This section deals with the case $i_1 \equiv i_2 \pmod 2$.
+Again, let $\D = \{ a_{i_1}, ..., a_{i_2}\}$ be a horizontal rectangle,
+satisfying conditions from sections \oldref{sc:boundaries} and \oldref{sc:good}.
+
+As in section \ref{sc:odd}, we will assume that both $i_1$ and $i_2$ are even;
+for the different parity the same logic can be repeated,
+with bounds in the inequalities swapped and illustrations reflected.
+
+\subsection{Case $\{3,2\}$ is right-normal}
+
+We start with the case
+\begin{equation}\label{15.2}
+	\g - \g' > \d - \d',
+\end{equation}
+where
+\Tp{25}{3}{66}{63}
+
+\textit{
+	Freiman ceases to give explanatory illustrations to inequalities like \ref{15.2} in this section
+	and suggests the reader to make them on their own.
+}
+
+Inequality \ref{15.2} expands to
+\begin{equation}\label{15.3}
+	0,32 > q \up{3}{63} \up{25}{66}.
+\end{equation}
+
+The rounding is done so that \ref{15.2} and \ref{15.5} follow from \ref{15.3}.
+
+The constants $\T{25}$ and $\T{3}$ are chosen such that the subrectangle $\{3,2\}$
+which will occur in the further splitting is right-normal.
+This condition allows us to choose the constant in the lhs of \ref{15.3} as large as possible.
+
+So, the following condition should take place:
+\begin{equation}\label{15.4}
+	\g - \g' > 1,4(\d - \d'),
+\end{equation}
+where
+\Tp[,]{28}{22}{64}{61}
+which expands to
+\begin{equation}\label{15.5}
+	0,345 > q \up{22}{61} \up{28}{64}.
+\end{equation}
+
+Let's show that \ref{15.5} follows from \ref{15.3}:
+\begin{gather*}
+	0,344 \pu{61}{22} > 0,31 \pu{66}{3}\\
+	\ArrowBetweenLines
+	1,1 > \uu{22}{3} \pp{66}{61}.
+\end{gather*}
+
+Checking it by replacing $p$ and $p'$ with their upper bound 0.8 and increasing the rhs.
+
+In consideration of \ref{15.3},
+in case $\D'$ is defined with \ref{eq:bound-l-nnn} and \ref{eq:bound-l-nns},
+we can take $\{1,\}$, $\{2,\}$, and $\{3,\}$,
+and in case \ref{eq:bound-l-sn} and \ref{eq:bound-l-ss}
+we can take $\{1,\}$ and $\{2,\}$.
+
+
