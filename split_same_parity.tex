@@ -24,14 +24,15 @@ where
 
 Inequality \ref{15.2} expands to
 \begin{equation}\label{15.3}
-	0,32 > q \up{3}{63} \up{25}{66}.
+	0,31 > q \up{3}{63} \up{25}{66}.
 \end{equation}
 
-The rounding is done so that \ref{15.2} and \ref{15.5} follow from \ref{15.3}.
+The rounding is done to a higher precision
+so that \ref{15.2} and \ref{15.5} both follow from \ref{15.3}.
 
 The constants $\T{25}$ and $\T{3}$ are chosen such that the subrectangle $\{3,2\}$
 which will occur in the further splitting is right-normal.
-This condition allows us to choose the constant in the lhs of \ref{15.3} as large as possible.
+This condition allows us to choose the largest possible constant in the lhs of \ref{15.3}.
 
 So, the following condition should take place:
 \begin{equation}\label{15.4}
@@ -45,11 +46,11 @@ which expands to
 \end{equation}
 
 Let's show that \ref{15.5} follows from \ref{15.3}:
-\begin{gather*}
+\begin{gather}\label{15.6}
 	0,344 \pu{61}{22} > 0,31 \pu{66}{3}\\
 	\ArrowBetweenLines
 	1,1 > \uu{22}{3} \pp{66}{61}.
-\end{gather*}
+\end{gather}
 
 Checking it by replacing $p$ and $p'$ with their upper bound 0.8 and increasing the rhs.
 
@@ -57,6 +58,182 @@ In consideration of \ref{15.3},
 in case $\D'$ is defined with \ref{eq:bound-l-nnn} and \ref{eq:bound-l-nns},
 we can take $\{1,\}$, $\{2,\}$, and $\{3,\}$,
 and in case \ref{eq:bound-l-sn} and \ref{eq:bound-l-ss}
-we can take $\{1,\}$ and $\{2,\}$.
+subrectangles $\{1,\}$ and $\{2,\}$ are enough.
 
+In the rest section we will assume that \ref{15.3} doesn't take place, that is,
+\begin{equation}\label{15.7}
+	0,31 \leqslant q \up{3}{63} \up{25}{66}.
+\end{equation}
 
+\subsection{Name}
+
+Consider condition
+\begin{equation}\label{15.8}
+	\g - \g' > \d - \d',
+\end{equation}
+where
+\Tp[,]{63}{36}{66}{63}
+which expands to
+\begin{equation}\label{15.9}
+	0,634 > q \up{36}{63} \up{63}{66}.
+\end{equation}
+
+To justify the choice $\T{\g} = \T{\g'} = \T{63}$, we need to check
+\begin{equation}\label{15.10}
+	\g - \g' > 1,4 (\d - \d'),
+\end{equation}
+where
+\Tp[,]{64}{61}{64}{61}
+which expands to
+\begin{equation}\label{15.11}
+	0,714 > q\up{61}{61}\up{64}{64}.
+\end{equation}
+The last inequality follows from \ref{15.9}, if
+\begin{equation}
+	\pp{63}{61} \pp{66}{64} \uu{61}{36} \uu{64}{63} < 1,125,
+\end{equation}
+which is easily checked by substituting $p = p' = 0.8$, as in \ref{15.6}.
+
+If \ref{15.8} takes place, then take subrectangles $\{1,\}$ and $\{2,\}$.
+Thus, in consideration of \ref{15.9}, cases \ref{eq:bound-l-sn} and \ref{eq:bound-l-ss} are over.
+
+Now turn to cases \ref{eq:bound-l-nnn} and \ref{eq:bound-l-nns} (IIa).
+We will show that
+\begin{equation}\label{15.12}
+	\g - \g' < \d - \d',
+\end{equation}
+where
+\Tp[,]{30}{25}{59}{3}
+which can be rewritten as
+\begin{equation}\label{15.13}
+	0,3375 < q \up{25}{3} \up{30}{59}.
+\end{equation}
+
+The last inequality follows from \ref{15.7}, if
+\begin{equation*}
+	1,09 < \pp{63}{3} \pp{66}{59} \uu{30}{3},
+\end{equation*}
+which is checked by substituting $p = p' = 0,25$.
+
+The inequality \ref{15.12} shows that, in consideration of \ref{15.9} and in case \ref{eq:bound-l-nnn},
+the subrectangle $\{3,2\}$ intersects with $\{2,\}$, even if $\{3,2\}$ is right-shortened.
+
+If $\D$ is left-shortened, then the splitting is over.
+If it is left-normal, then subrectangles $J_k = \{\overset{k}{3}, \overset{k}{3}\}$ are added.
+
+Check that, for example, $J_1 = \{3, 3\}$ is good.
+
+We need
+\begin{equation}\label{15.14}
+	\g - \g' < 3,8 (\d - \d'),
+\end{equation}
+where
+\Tp[,]{28}{1}{28}{1}
+which expands to
+\begin{equation}
+	0,264 < q \up{1}{1} \up{28}{28}
+\end{equation}
+and follows from \ref{15.7}, if
+\begin{equation*}
+	1,17 > \uu{3}{1} \uu{25}{28} \pp{1}{63} \pp{28}{66},
+\end{equation*}
+which is obvious.
+
+\textit{
+	Here Freiman links the $\sqrt{21}$ proof from \S9.
+	I will translate it soon.
+}
+
+It remains to deal with \ref{eq:bound-l-nns} (IIb).
+
+Suppose that the following inequality takes place:
+\begin{equation}\label{15.15}
+	\g - \g' < \d - \d'
+\end{equation}
+with
+\Tp[.]{30}{25}{63}{36}
+
+Inequality \ref{15.15} is rewritten as follows.
+Instead of 0,703 in the lhs take constant 0,73 to assure $\{3, 2\}$ normality:
+\begin{equation}\label{15.16}
+	0,73 < q \up{25}{36} \up{30}{63}.
+\end{equation}
+
+Subrectangle $\{3, 2\}$ is normal, if
+\begin{equation*}\label{15.17}
+	1,4 (\g - \g') < \d - \d',
+\end{equation*}
+where
+\Tp[,]{28}{22}{64}{61}
+which expands to
+\begin{equation*}
+	0,6773 < q \up{22}{61} \up{28}{64}
+\end{equation*}
+and follows from \ref{15.16}, if
+\begin{equation*}
+	1,076 > \pp{61}{36} \pp{64}{63} \uu{30}{22},
+\end{equation*}
+which is checked as \ref{15.6}.
+
+In addition to subrectangles $\{1,\}$ and $\{2,\}$ we can now take $\{3, 2\}$,
+and case \ref{eq:bound-l-nns} is done, if \ref{15.16}, \ref{15.9}, and \ref{15.7} all take place.
+
+Note that \ref{15.16} does not depend on \ref{15.9}.
+We will need it below.
+If \ref{15.16} doesn't take place, that is,
+\begin{equation}\label{15.18}
+	0,73 \geqslant q \up{25}{36} \up{30}{63},
+\end{equation}
+then in case \ref{eq:bound-l-nns} the subrectangles $\{2,\}$ and $\{3, 2\}$ may not intersect when
+\begin{equation*}
+	\D_1'(2) + \D_2'(2) > \D_1''(3) + \D_2''(2).
+\end{equation*}
+
+The system of subrectangles covering the interval $\left(\D_1''(3) + \D_2''(2); \D_1'(2) + \D_2'(2)\right)$
+will be found further.
+
+Suppose that \ref{15.9} doesn't take place, that is,
+\begin{equation}\label{15.19}
+	0,634 \leqslant q \up{36}{63} \up{63}{66}.
+\end{equation}
+
+At first, consider subrectangles $\{1,\}$ and $\{2, 1\}$.
+Rectangle $\D$ is good, so they intersect.
+
+Showing that $\{2, 1\}$ is good.
+We need the following:
+\begin{equation}
+	3,8 (\g - \g') > \d - \d',
+\end{equation}
+where
+\Tp[,]{64}{29}{95}{65}
+which expands to
+\begin{equation*}
+	1,36 > q \up{29}{65} \up{64}{95}
+\end{equation*}
+and is easily checked.
+
+Now consider subrectangle $\{3, 1\}$, if it is good.
+The following is required:
+\begin{equation*}
+	3,8 (\g - \g') > \d - \d',
+\end{equation*}
+where
+\Tp[,]{28}{1}{95}{65}
+which expands to
+\begin{equation}\label{15.20}
+	0,696 > q \up{1}{65} \up{28}{95}.
+\end{equation}
+
+Let the negation of \ref{15.20}, the inequality \ref{15.21}, take place:
+\begin{equation}\label{15.21}
+	0,696 \leqslant q \up{1}{65} \up{28}{95}.
+\end{equation}
+
+Then considering the subrectangle $\{3, 11\}$ and showing that it intersects with $\{2, 1\}$.
+The following inequality is needed:
+\begin{equation}\label{15.22}
+	\g - \g' < \d - \d',
+\end{equation}
+
+% subsections required
