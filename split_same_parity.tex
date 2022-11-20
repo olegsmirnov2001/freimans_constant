@@ -4,7 +4,7 @@ This section deals with the case $i_1 \equiv i_2 \pmod 2$.
 Again, let $\D = \{ a_{i_1}, ..., a_{i_2}\}$ be a horizontal rectangle,
 satisfying conditions from sections \oldref{sc:boundaries} and \oldref{sc:good}.
 
-As in section \ref{sc:odd}, we will assume that both $i_1$ and $i_2$ are even;
+As in section \oldref{sc:odd}, we will assume that both $i_1$ and $i_2$ are even;
 for the different parity the same logic can be repeated,
 with bounds in the inequalities swapped and illustrations reflected.
 
@@ -46,11 +46,13 @@ which expands to
 \end{equation}
 
 Let's show that \ref{15.5} follows from \ref{15.3}:
-\begin{gather}\label{15.6}
-	0,344 \pu{61}{22} > 0,31 \pu{66}{3}\\
-	\ArrowBetweenLines
-	1,1 > \uu{22}{3} \pp{66}{61}.
-\end{gather}
+\begin{equation}\label{15.6}
+	\begin{gathered}
+		0,344 \pu{61}{22} > 0,31 \pu{66}{3}\\
+		\ArrowBetweenLines
+		1,1 > \uu{22}{3} \pp{66}{61}.
+	\end{gathered}
+\end{equation}
 
 Checking it by replacing $p$ and $p'$ with their upper bound 0.8 and increasing the rhs.
 
@@ -97,6 +99,8 @@ which is easily checked by substituting $p = p' = 0.8$, as in \ref{15.6}.
 If \ref{15.8} takes place, then take subrectangles $\{1,\}$ and $\{2,\}$.
 Thus, in consideration of \ref{15.9}, cases \ref{eq:bound-l-sn} and \ref{eq:bound-l-ss} are over.
 
+\subsection{Name}
+
 Now turn to cases \ref{eq:bound-l-nnn} and \ref{eq:bound-l-nns} (IIa).
 We will show that
 \begin{equation}\label{15.12}
@@ -140,9 +144,11 @@ and follows from \ref{15.7}, if
 which is obvious.
 
 \textit{
-	Here Freiman links the $\sqrt{21}$ proof from \S9.
+	Here Freiman references the $\sqrt{21}$ proof from \S9.
 	I will translate it soon.
 }
+
+\subsection{Name}
 
 It remains to deal with \ref{eq:bound-l-nns} (IIb).
 
@@ -235,5 +241,219 @@ The following inequality is needed:
 \begin{equation}\label{15.22}
 	\g - \g' < \d - \d',
 \end{equation}
+where
+\Tp[.]{30}{25}{79}{66}
 
-% subsections required
+The choice of $\Th$'s will be explained.
+
+Inequality \ref{15.22} is transformed into
+\begin{equation*}
+	0,702 < q \up{25}{66} \up{30}{79},
+\end{equation*}
+which instantly follows from \ref{15.21}.
+
+We have to show that
+\begin{equation*}
+	1,4 (\g - \g') < \d - \d',
+\end{equation*}
+where
+\Tp{33}{29}{68}{65}
+which expands to
+\begin{equation*}
+	0,574 < q \up{29}{65} \up{33}{68},
+\end{equation*}
+which follows from \ref{15.21}.
+
+The next subrectangle is $\{2, 2\}$.
+Let's show that it intersects with $\{3, 11\}$ or $\{3, 1\}$.
+The following is required:
+\begin{equation}\label{15.25}
+	\g - \g' > \d - \d',
+\end{equation}
+where
+\Tp{63}{3}{65}{58}
+which expands to
+\begin{equation*}
+	1,275 > q \up{3}{58} \up{63}{65},
+\end{equation*}
+which takes place.
+
+The condition \ref{15.12} allows us to finish this case
+by taking subrectangles $\{2, 3\}$, $\{3, 2\}$, and $\{3, 3\}$ or $J_k$
+(the latter one in case $\D$ is left-normal).
+
+\subsection{Name}
+
+Turn to case \ref{eq:bound-l-nns} (IIb) with \ref{15.19} taking place.
+
+In this case the system of subrectangles covering $\left[\D_1'(2) + \D_2'(2); \D_1'' + \D_2''\right]$
+coincides with one for condition \ref{eq:bound-l-nnn},
+and the system covering the interval to the left
+coincides with the one for \ref{eq:bound-l-nns} (IIb) with \ref{15.9} taking place.
+
+In cases \ref{eq:bound-l-sn} and \ref{eq:bound-l-ss}
+the subrectangles $\{3, 1\}$ and $\{3, 11\}$
+can not be considered, because of the rule of setting the left end of $\D$.
+The interval $\left(\D_1'(2) + \D_2'(1); \D_1''(2) + \D_2''(2)\right)$ remains uncovered.
+
+Let's move to the construction of the system of subrectangles covering
+\begin{equation}\label{15.26}
+	\left(\D_1''(3) + \D_2''(2), \D_1'(2) + 'D_2'(2)\right).
+\end{equation}
+
+Conditions \ref{15.7} and \ref{15.18} both take place.
+
+At first consider the case \ref{15.15} takes place with the following choice of $\Th$'s:
+\Tp{57}{19}{10}{63}
+which expands to
+\begin{equation}\label{15.27}
+	0,677 < q \up{19}{10} \up{57}{63}.
+\end{equation}
+
+Interval \ref{15.26} is covered by the subrectangles $\{22, 311\}$ and $\{22, 32\}$.
+
+We ensure that $\{3, 2\}$ and $\{22, 311\}$ intersect by demanding the condition \ref{15.27}.
+
+Showing that $\{22, 311\}$ is good. We need
+\begin{equation}
+	\g - \g' < 3,43(\d - \d'),
+\end{equation}
+where
+\Tp{60}{56}{14}{7}
+which expands to
+\begin{equation}
+	0,652 < q \up{56}{7} \up{60}{14},
+\end{equation}
+which follows from \ref{15.27}.
+
+Showing that $\{22, 32\}$ is also good. We need
+\begin{equation*}
+	\g - \g' < 3,43 (\d - \d')
+\end{equation*}
+with
+\Tp{60}{56}{21}{15}
+expanding to
+\begin{equation}\label{15.29}
+	0,53 < q \up{56}{15} \up{60}{21},
+\end{equation}
+which follows from \ref{15.27}.
+
+Subrectangles $\{22, 311\}$ and $\{22, 32\}$ intersect under condition
+\begin{equation}
+	3,43 (\g - \g') > \d - \d',
+\end{equation}
+where
+\Tp{60}{56}{28}{1}
+which transforms to
+\begin{equation}\label{15.30}
+	1,17 > q \up{56}{1} \up{60}{28},
+\end{equation}
+which follows from \ref{15.18}.
+
+Finally, we have to show that
+\begin{equation*}
+	\g - \g' > \d - \d'
+\end{equation*}
+with
+\Tp{59}{30}{36}{19}
+expanding to
+\begin{equation}
+	0,94 > q \up{30}{19} \up{59}{36},
+\end{equation}
+which follows from \ref{15.18}.
+
+Further we can assume that the inequality \ref{15.32} takes place:
+\begin{equation}\label{15.32}
+	0,677 \geqslant q \up{19}{10} \up{57}{63}.
+\end{equation}
+
+Showing that $\{2, 2\}$ is left-normal, that is,
+\begin{equation}
+	\g - \g' > 1,4 (\d - \d')
+\end{equation}
+with
+\Tp{33}{29}{33}{29}
+expanding to
+\begin{equation}\label{15.33}
+	0,715 > q \up{29}{29} \up{33}{33}.
+\end{equation}
+
+Inequality \ref{15.33} follows from \ref{15.32}, if
+\begin{equation}
+	A(p, p') = \pu{10}{19} \pu{63}{57} \up{29}{29} \up{33}{33} < 1,053.
+\end{equation}
+Note that $F(p', p) \leqslant A(0.25, 0.8) = 0,997 < 1,053$.
+
+Overall, if \ref{15.32} takes place, the inequality \ref{15.25} can be set with constants
+\Tp{54}{29}{29}{25}
+so it can be rewritten as
+\begin{equation}\label{15.34}
+	0,612 > q \up{29}{25} \up{54}{29}.
+\end{equation}
+
+At first, let \ref{15.34} not take place, that is,
+\begin{equation}\label{15.35}
+	0,612 \leqslant q \up{29}{25} \up{54}{29}.
+\end{equation}
+
+Check the condition \ref{15.15} with
+\Tp{41}{19}{63}{10}
+expanding to
+\begin{equation}\label{15.36}
+	0,492 < q \up{19}{10} \up{41}{63}.
+\end{equation}
+It follows from \ref{15.35}.
+
+So $\{112, 311\}$ intersects with $\{3, 2\}$.
+
+Showing that $\{113, 311\}$ is good.
+Check the following inequality:
+\begin{equation}
+	\g - \g' < 3,8 (\d - \d')
+\end{equation}
+with
+\Tp{55}{40}{14}{7}
+expanding to
+\begin{equation}
+	0,49 < q \up{40}{7} \up{55}{14},
+\end{equation}
+and it follows from \ref{15.35}.
+
+Now consider the subrectangle $\{112, 32\}$ and show that it intersects with $\{112, 311\}$.
+It is so, if $\{112, 3\}$ is good, and it is enough to check that
+\begin{equation*}
+	3,8 (\g - \g') > \d - \d'
+\end{equation*}
+with
+\Tp{55}{40}{28}{1}
+which expands to
+\begin{equation*}
+	1,07 > q \up{40}{1} \up{55}{28},
+\end{equation*}
+which follows from \ref{15.32}.
+
+Check that $\{112, 32\}$ is good. We need
+\begin{equation*}
+	\g - \g' < 3,43 (\d - \d'),
+\end{equation*}
+where
+\Tp{55}{40}{21}{15}
+which can be rewritten as
+\begin{equation*}
+	0,486 < q \up{40}{15} \up{55}{21},
+\end{equation*}
+which follows from \ref{15.35}.
+
+The next two subrectangles are $\{2112, 33\}$ and $\{3112, 33\}$.
+
+Show that the first one intersects with $\{112, 32\}$.
+The inequality \ref{15.25} should take place with the following choice of constants:
+\Tp[.]{54}{47}{24}{19}
+This inequality expands to
+\begin{equation*}
+	0,765 > q \up{47}{19} \up{54}{24},
+\end{equation*}
+which follows from \ref{15.32}.
+
+It is very easy to check that both $\{3113, 33\}$ and $\{3112, 33\}$ are good.
+Showing that they 
