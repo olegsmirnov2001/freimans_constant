@@ -1,10 +1,13 @@
-\documentclass{beamer}
-\title[Hall's Ray]{Hall's Ray\\of the Markov Spectrum}
+\documentclass[aspectratio=1610]{beamer}
+\title[Hall's Ray]{Hall's Ray\\of the Markov and Lagrange Spectra}
 \author{Oleg Smirnov}
 \institute{Higher School of Economics}
 \date{2022}
 
 \input{designations}
+
+\usepackage{amsfonts, amsmath, amssymb, amsthm, array, hhline, amscd, mathtools}
+\usepackage{xcolor}
 
 \graphicspath{{media/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
@@ -15,5 +18,11 @@
 
 \include{diophantine_approximations}
 \include{continued_fraction}
+\include{example_pi}
+\include{hurwitz_theorem}
+\include{markov_value}
+\include{lagrange_spectrum_naive}
+\include{lagrange_spectrum_sequences}
+\include{lagrange_spectrum_geometry}
 
 \end{document}
