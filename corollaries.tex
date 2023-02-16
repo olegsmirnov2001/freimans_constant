@@ -57,15 +57,15 @@ I will consider the rectangle with the empty center:
 
 Section \oldref{sc:boundaries} provides the following boundaries for this rectangle:
 \begin{align*}
-	\D' & = \l(\overline{21}3\underset{0}{0}3\overline{12}) = 2\left(2 - \sqrt{3}\right) \approx 0.53589,\\
-	\D'' & = \l(\overline{21}31\underset{0}{0}13\overline{12}) = 1 + \tfrac{1}{\sqrt{3}} \approx 1.57735.
+	\D' & = \l(\overline{21}3\underset{0}{0}213\overline{12}) = 2\left(2 - \sqrt{3}\right) \approx 0.62654,\\
+	\D'' & = \l(\overline{21}31\underset{0}{0}1213\overline{12}) = 1 + \tfrac{1}{\sqrt{3}} \approx 1.52473.
 \end{align*}
 
-Clearly, the rectangle $\D$ is good, since it is a square and its aspect ratio is $1:1$.
+Clearly, the rectangle $\D$ is good, since it is almost a square and its aspect ratio is almost $1:1$.
 
 Therefore, the segment $[\D'; \D'']$ is contained within the sum of the desired Cantor sets:
 \begin{equation}
-	[\D'; \D''] \subset C(3) \backslash (31313) \oplus C(3) \backslash (31313)
+	[\D'; \D''] \subset C(3) \backslash (31313) \oplus C(3) \backslash (31313).
 \end{equation}
 
 The convex hull of the sum is the following segment:
@@ -78,16 +78,17 @@ The convex hull of the sum is the following segment:
 The length of the projection of $\D$ is
 \begin{equation}
 	\label{eq:length-segment}
-	\left|\D\right| \approx 1.04146,
+	\left|\D\right| \approx 0.89819,
 \end{equation}
-which is $98\%$ of the length of the convex hall of the sum set:
+which is $85\%$ of the length of the convex hall of the sum set:
 \begin{gather*}
 	\left|\overline{C(3) \backslash (31313) \oplus C(3) \backslash (31313)}\right| \approx 1.0545.
-\end{gather*} 
+\end{gather*}
 
 However, \ref{eq:length-segment} does not give any statement about the Markov Spectrum directly,
-as for rectangle with the subcenter
+because, for example, for rectangle with the subcenter
 \begin{equation*}
 	\{\underset{0}{4}1\underset{2}{3}12\}
 \end{equation*}
-the height function at the position 2 is too large.
+the height function at the position 2 may be too large and should be considered,
+when talking about the spectrum, not the Cantor set.
